@@ -53,7 +53,7 @@
 
     [self.view addSubview:touchView];
 
-    //↓のコメントを外すとtopTouchが動くようになる
+    //↓のコメントを外すとtapTouchとself.viewが完全に重なる
 /*    CGPoint point = [touchView convertPoint:touchView.frame.origin fromView:self.view];
     CGRect touchRect = touchView.frame;
     touchRect.origin = point;

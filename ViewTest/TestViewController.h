@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TestViewController.h
 //  ViewTest
 //
 //  Created by Aki on 2013/01/08.
@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TestViewController : UIViewController
 
+@property (weak, nonatomic)UIView *touchView;
 @property (strong, nonatomic) UITapGestureRecognizer *tapGesture;
 
-@property (weak, nonatomic) IBOutlet UIView *aView;
+- (void)show;
 
 @end

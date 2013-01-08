@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rO0-2A-v6C">
+                                <color key="backgroundColor" red="1" green="0.3839115159" blue="0.45743496950000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rO0-2A-v6C" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="FT0-hR-ar1"/>
+                            <constraint firstItem="rO0-2A-v6C" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="G3r-Ij-MVd"/>
+                            <constraint firstItem="rO0-2A-v6C" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="c26-aq-en2"/>
+                            <constraint firstItem="rO0-2A-v6C" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="vqY-tv-xQf"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="aView" destination="rO0-2A-v6C" id="cwb-9S-TYb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>

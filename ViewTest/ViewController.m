@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TestViewController.h"
 
 @interface ViewController ()
 
@@ -17,13 +18,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    //タップ
+    self.tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapTouch:)];
+    [self.aView addGestureRecognizer:self.tapGesture];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)tapTouch:(id)sender
+{
+    TestViewController *test = [[TestViewController alloc] init];
+    [test show];
 }
 
 @end
